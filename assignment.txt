@@ -1,0 +1,40 @@
+Work Task - Research engineer/scientist
+This document outlines a work task aimed to test your fit for working as a research engineer/scientist at SaferAI.
+You will be granted an honorarium of $100 for completing this task, under the form of an Amazon Gift Card.
+We recommend spending up to 3h to complete the task, but you can spend more or less time at your own
+discretion based on your pace. Please report the time you spent after having completed the task.
+Act as if you were in real working conditions as much as possible. We expect this task to be challenging, please do
+your best within a reasonable time.
+Risk assessment software for AI
+The goal of this work task is to create a prototype of a quantitative risk assessment software1 applied to AI. We
+want you to create an interactive tool that:
+1. Takes as an input empirical measurements such as benchmark results, evaluation results and incident
+reporting measures. These inputs map to parameters of a risk model outlined below. For instance, a
+score X on benchmark Y maps to parameter Z. We want the inputs to be adjustable by the end user of
+the web app.
+2. Outputs metrics related to the severity of the risk model (measured in $ of economic damage for
+simplicity), either as a distribution of probability over severities or as a point estimate.
+For this exercise, we don’t pay attention to the specific numbers and distributions used to map parameters,
+inputs and outputs to each other. We do care about the propagation of probabilities across the risk model.
+We will focus on a simple AI risk model for cybersecurity broken down as follows:
+1. N attack attempts
+2. P(successful spearphishing)
+3. P(successful malware development & deployment)
+4. P(successful persistence & achievement of objectives)
+5. Severity in $ per successful attempt
+If it helps to produce plausible numbers, you can assume that the threat actor of interest is a cybercrime group,
+attacking an S&P 500 company.
+You can pick any input, such as benchmarks or evaluations results, that is a proxy for each parameter. You don’t
+need to focus on being comprehensive, as much as demonstrating interesting functionalities that such
+a software could provide. (2 hours recommended)
+We encourage you to explore how certain configuration of input values can result in interesting insights that
+demonstrate the value of quantitative risk models like this one. For this section of the task, you don’t need
+to constrain yourself to plausible values, and you are free to make any modifications to the model you feel might
+provide additional insights. (1 hour recommended)
+The deliverable is a video or a document compiling a set of screenshots and explanations of the functionalities
+and results of the app. If you choose to do the video version, you can use Loom to do so. Please also send back
+your code that we will run to test the app.
+Submit everything with “Work Task Cyber - [NAME] ” in the subject line to simeon@safer-ai.org. Add to the
+body of the email the email address you want the Amazon Gift Card to be sent to.
+You’re heavily encouraged to use LLM-powered tools such as Claude 3.7 Sonnet/Claude Code, for which we
+can pay a subscription if relevant, Replit, or o3-mini-high.
